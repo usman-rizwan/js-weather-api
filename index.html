@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Weather Api</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Clock Fonts -->
+  <link href="https://db.onlinewebfonts.com/c/84cb021d5f9af287ffff84b61beef6dc?family=clockicons" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+  <!-- Animate CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class=" container-fluid m-5 d-flex justify-content-center align-items-center ">
+      <div class="form-outline w-40 center-content" data-mdb-input-init>
+        <i class="fas fa-solid fa-globe trailing"></i>
+        <input type="text" id="w-input" class="form-control center-input " data-mdb-showcounter="true" maxlength="25" />
+        <label class="form-label" for="form16">Enter City Name</label>
+        <div class="form-helper"></div>
+      </div>
+      <button type="button" class="btn btn-primary mx-2" onclick="fetchWeather()"><i class="fas fa-bolt"
+          aria-hidden="true"></i> Search </button>
+    </div>
+
+    <!-- <div class="container mx-auto" style="max-width: 540px;">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/snow.png" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title" id="">Card title</h5>
+                            <p class="card-text">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <section class="vh-100">
+      <div class="container ">
+
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+
+            <div class="card" style="color: #4B515D; border-radius: 35px;">
+              <div class="card-body p-4">
+
+                <div class="d-flex">
+                  <h6 class="flex-grow-1" id="city">Warsaw</h6>
+                  <h6 id="timer"><div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div></h6>
+                </div>
+
+                <div class="d-flex flex-column text-center mt-5 mb-4">
+                  <h6 class="display-4 mb-0 font-weight-bold" id="temp" style="color: #1C2331;"> 13°C </h6>
+                  <span class="small" style="color: #868B94" id="weatherCon">Stormy</span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1" style="font-size: 1rem;">
+                    <div>Wind<i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="windSpeed"> 40 km/h
+                      </span></div>
+                    <div>Humidity<i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1 " id="humidity"> 84% </span>
+                    </div>
+                    <div>Visibility <i class="fas fa-eye-low-vision fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="weatherVis"> 0.2h </span>
+                    </div>
+                  </div>
+                  <div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                      width="100px" id="weatherImage" class="animate__zoomInRight">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+  <!-- Moment JS  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+    integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- AXIOS -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
