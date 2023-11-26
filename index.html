@@ -14,10 +14,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
   <!-- Animate CSS -->
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -35,28 +32,6 @@
           aria-hidden="true"></i> Search </button>
     </div>
 
-    <!-- <div class="container mx-auto" style="max-width: 540px;">
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="images/snow.png" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title" id="">Card title</h5>
-                            <p class="card-text">
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </p>
-                            <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     <section class="vh-100">
       <div class="container ">
 
@@ -68,9 +43,11 @@
 
                 <div class="d-flex">
                   <h6 class="flex-grow-1" id="city">Warsaw</h6>
-                  <h6 id="timer"><div class="spinner-border text-dark" role="status">
-                    <span class="sr-only">Loading...</span>
-                  </div></h6>
+                  <h6 id="timer">
+                    <div class="spinner-border text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                  </h6>
                 </div>
 
                 <div class="d-flex flex-column text-center mt-5 mb-4">
@@ -80,16 +57,19 @@
 
                 <div class="d-flex align-items-center">
                   <div class="flex-grow-1" style="font-size: 1rem;">
-                    <div>Wind<i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="windSpeed"> 40 km/h
+                    <div>Wind<i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"
+                        id="windSpeed"> 40 km/h
                       </span></div>
-                    <div>Humidity<i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1 " id="humidity"> 84% </span>
+                    <div>Humidity<i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1 "
+                        id="humidity"> 84% </span>
                     </div>
-                    <div>Visibility <i class="fas fa-eye-low-vision fa-fw" style="color: #868B94;"></i> <span class="ms-1" id="weatherVis"> 0.2h </span>
+                    <div>Visibility <i class="fas fa-eye-low-vision fa-fw" style="color: #868B94;"></i> <span
+                        class="ms-1" id="weatherVis"> 0.2h </span>
                     </div>
                   </div>
-                  <div>
+                  <div class="hover-zoom">
                     <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                      width="100px" id="weatherImage" class="animate__zoomInRight">
+                      width="100px" id="weatherImage" class="animate__animated animate__zoomInRight">
                   </div>
                 </div>
 
@@ -109,6 +89,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
     integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- AXIOS -->
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- JS -->

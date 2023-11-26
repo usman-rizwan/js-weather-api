@@ -10,3 +10,13 @@
 .f-20{
   font-size: 20px !important;
 }
+.swal2-actions{
+  width: 100% !important;
+}
+.swal2-confirm {
+  width: 80% !important;
+  background-color: #386bc0 !important;
+}
+.container:hover{
+  cursor:pointer;
+}

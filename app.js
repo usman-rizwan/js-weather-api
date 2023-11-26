@@ -40,7 +40,7 @@ const renderData = async () => {
         )} </span> %`;
         weatherVis.innerHTML = `<span class="ms-1" id="weatherVis">${visibility / 1000
             } km </span>`;
-            // console.log("Api   > " + apiData.weather);
+        // console.log("Api   > " + apiData.weather);
         for (let i = 0; i < apiData.weather.length; i++) {
             console.log(apiData.weather[i]);
             weatherCon.innerHTML = `<h4 class="text-capitalize">${apiData.weather[i].description} </h4>`;
@@ -52,7 +52,7 @@ const renderData = async () => {
                 weatherImage.src = "images/rain.png";
             } else if (apiData.weather[i].description == "clear sky") {
                 weatherImage.src = "images/clear.png";
-            } else if (apiData.weather[i].description == "scattered clouds"  ) {
+            } else if (apiData.weather[i].description == "scattered clouds") {
                 weatherImage.src = "images/clouds.png";
             } else if (apiData.weather[i].description == "broken clouds") {
                 weatherImage.src = "images/br-clouds.png";
@@ -112,14 +112,57 @@ const fetchWeather = async () => {
                 } else if (data.weather[i].description == "broken clouds") {
                     weatherImage.src = "images/br-clouds.png";
                 }
+                else if (data.weather[i].description == "few clouds") {
+                    weatherImage.src = "images/few-clouds.png";
+                }
+                else if (data.weather[i].description == "light snow") {
+                    weatherImage.src = "images/snow.png";
+                }
                 // weatherCon.innerHTML = `<h2 >${Math.round(main.temp)} °C</h2>`
             }
             input.value = ""
         } else {
+            Swal.fire({
+                icon: "error",
+                html: `Please Enter Valid Input`,
+                showClass: {
+                    popup: `
+                    animate__animated
+                    animate__fadeInUp
+                    animate__faster
+                  `
+                },
+                hideClass: {
+                    popup: `
+                    animate__animated
+                    animate__fadeOutDown
+                    animate__faster
+                  `
+                }
+            });
             console.log("enter valid input");
         }
     } catch (error) {
-        console.log(error);
+        Swal.fire({
+            icon: "error",
+            html: `This City Name Is Not Valid`,
+            showClass: {
+                popup: `
+                animate__animated
+                animate__fadeInUp
+                animate__faster
+              `
+            },
+            hideClass: {
+                popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+              `
+            }
+        });
+        input.value = ""
+        console.log(error );
     }
 };
 const ShowTime = () => {
