@@ -1,15 +1,15 @@
-.clock {
-  font-family: "clockicons", Helvetica, sans-serif;
-}
-.w-40 {
-  width: 40% !important;
-}
 *{
   font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 body{
   background: radial-gradient(circle at 7.4% 45.1%, rgb(236, 206, 251) 0%, rgb(205, 237, 246) 45.1%, rgb(227, 251, 252) 78.4%, rgb(230, 247, 235) 90%);
+}
+.clock {
+  font-family: "clockicons", Helvetica, sans-serif;
+}
+.w-40 {
+  width: 40% !important;
 }
 .f-20{
   font-size: 20px !important;
@@ -21,9 +21,43 @@ body{
   width: 80% !important;
   background-color: #386bc0 !important;
 }
-.container:hover{
+.card:hover{
   cursor:pointer;
 }
 .card{
   background: radial-gradient(circle at -3.3% 48%, rgb(141, 146, 239) 0%, rgb(99, 229, 254) 90%) !important;
+}
+@media screen and (max-width: 650px) {
+  .w-40 {
+    width: 60% !important;
+  }
+  .clock{
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .w-input {
+    width: 80% !important;
+  }
+  .btn{
+    width: 90% !important;
+  }
+  .clock{
+    font-size: 12px !important;
+  }
+  .fa-globe{
+    display: none;
+  }
+  label{
+    font-size: 15px;
+  }
+ 
+}
+@media screen and (max-width: 300px) {
+  .w-input {
+    width: 100% !important;
+  }
+  .btn{
+    width: 60% !important;
+  }
 }
