@@ -1,0 +1,66 @@
+{
+    "name": "Weather'App",
+    "short_name": "TodayWeather",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#e3e4e3",
+    "theme_color": "#ceecf6",
+    "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/br-clouds.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/clear.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/clouds.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/drizzle.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/few-clouds.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/haze.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/rain.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/smoke.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/snow.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/storm.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/wind.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ]
+}
