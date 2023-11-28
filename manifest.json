@@ -8,7 +8,7 @@
     "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/images/br-clouds.png",
+      "src": "/images/drizzle.png",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -23,7 +23,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "/images/drizzle.png",
+      "src": "/images/br-clouds.png",
       "type": "image/png",
       "sizes": "192x192"
     },

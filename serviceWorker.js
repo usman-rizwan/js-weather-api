@@ -6,6 +6,15 @@ const assets = [
     "/images/clouds.png",
     "/images/clear.png",
     "/images/br-clouds.png",
+    "/images/drizzle.png",
+    "/images/few-clouds.png",
+    "/images/haze.png",
+    "/images/humidity.png",
+    "/images/rain.png",
+    "/images/smoke.png",
+    "/images/snow.png",
+    "/images/storm.png",
+    "/images/wind.png",
 
 ]
 
